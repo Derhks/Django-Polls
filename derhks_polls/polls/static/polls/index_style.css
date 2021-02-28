@@ -1,0 +1,41 @@
+body {
+    background: white;
+}
+
+h1 {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align-last: center;
+    color: #D92B95;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+ul li {
+    border-bottom-color: darkorchid;
+    border-inline-color: darkorchid;
+    border-bottom-style: inset;
+    border-right-style: inset;
+    border-left-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    list-style: none;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+li:first-child {
+    border-top: solid;
+    border-top-color: darkorchid;
+}
+
+li a {
+    color: black;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
