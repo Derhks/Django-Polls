@@ -21,13 +21,63 @@ Polls application using Django
   conda activate polls
   ```
 
-- With the virtual environment activated we are going to install the requirements used in the project
+- With the virtual environment activated we are going to install \
+  the requirements used in the project
 
     ```bash
   pip3 install -r requirements.txt
   ```
 
+- Move to the folder derhks_polls
 
+    ```bash
+  cd derhks_polls/
+  ```
+
+- The application has its unit tests, run the following command:
+
+    ```bash
+  python manage.py test polls
+  ```
+
+- Within the requirements we have the Coverage.py tool that allows \
+  us to measure the coverage of the app code, execute the command:
+  
+    ```bash
+  coverage run --source='.' manage.py test polls
+  ```
+  
+- We can view the report with the command:
+  
+    ```bash
+  coverage report
+  ```
+  
+- For a nicer presentation use
+
+    ```bash
+  coverage html
+  ```
+  to get annotated HTML listings detailing missed lines.
+
+
+- To view the html file run the command:
+
+    ```bash
+  xdg-open htmlcov/index.html
+  ```
+
+- Finally, run the application server
+
+    ```bash
+  python manage.py runserver
+  ```
+  
+- After finishing the above steps you can test the application in the browser using the following URL:
+
+    ```bash
+  http://127.0.0.1:8000/admin/
+  ```
 
 ## Built With
 
