@@ -1,7 +1,14 @@
 # Django-Polls
 Polls application using Django
 
-# Development Environment Configuration
+## Table of Content
+
+* [Development Environment Configuration](#development-environment-configuration)
+* [Docker](#docker)
+* [Built With](#built-with)
+* [Authors](#authors)
+
+## Development Environment Configuration
 
 - Download the files from this repository.
 
@@ -21,17 +28,17 @@ Polls application using Django
   conda activate polls
   ```
 
-- With the virtual environment activated we are going to install \
-  the requirements used in the project
-
-    ```bash
-  pip3 install -r requirements.txt
-  ```
-
 - Move to the folder derhks_polls
 
     ```bash
   cd derhks_polls/
+  ```
+
+- With the virtual environment activated we are going to install 
+  the requirements used in the project
+
+    ```bash
+  pip3 install -r requirements.txt
   ```
 
 - The application has its unit tests, run the following command:
@@ -40,7 +47,7 @@ Polls application using Django
   python manage.py test polls
   ```
 
-- Within the requirements we have the Coverage.py tool that allows \
+- Within the requirements we have the Coverage.py tool that allows 
   us to measure the coverage of the app code, execute the command:
   
     ```bash
@@ -73,11 +80,23 @@ Polls application using Django
   python manage.py runserver
   ```
   
-- After finishing the above steps you can test the application in the browser using the following URL:
+- After finishing the above steps you can test the application in 
+  the browser using the following URL:
 
     ```bash
   http://127.0.0.1:8000/admin/
   ```
+
+## Docker
+With the help of Docker we can run and test the application with a 
+single command
+
+
+  ```bash
+  docker-compose up
+  ```
+It is necessary to be inside the first directory derhks_polls/ to execute 
+the above command
 
 ## Built With
 
