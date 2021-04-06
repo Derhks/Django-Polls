@@ -87,6 +87,22 @@ Polls application using Django
   http://127.0.0.1:8000/admin/
   ```
 
+
+# Configuration in PyCharm to run the server from the top of the IDE
+
+- Press the "Add Configuration..." icon at the top right.
+
+- Click on the plus icon at the top left.
+
+- In the drop-down select "Django Server". 
+
+- In the upper part in the box "Name:" we write the name that we want to give to the server, for example the name of the project.
+
+- In the lower part press the "Apply" and "OK" buttons to save the configuration.
+
+Now you will see that an icon appears with the name you wrote in the "Name:" box, now you can press the "Play" button to run the application server and you can access it from the browser with the URL above.
+
+
 ## Docker
 With the help of Docker we can run and test the application with a 
 single command
@@ -97,6 +113,7 @@ single command
   ```
 It is necessary to be inside the first directory derhks_polls/ to execute 
 the above command
+
 
 ## Built With
 
