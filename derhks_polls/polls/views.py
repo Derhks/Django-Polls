@@ -2,10 +2,12 @@ from django.shortcuts import render
 
 from django.db.models import F
 from django.http import Http404, HttpResponseRedirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils import timezone
+from django.views.generic import CreateView
 
 from .models import Question, Choice
+from .forms import QuestionForm, ChoicesForm
 
 
 def index(request):
@@ -70,3 +72,16 @@ def vote(request, question_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
+
+class CreateQuestion(CreateView):
+    model = Question
+    form_class = QuestionForm
+    template_name = 'create_question.html'
+    success_url = reverse_lazy('polls:index')
+
+
+class CreateChoice(CreateView):
+    model = Choice
+    form_class = ChoicesForm
+    template_name = 'create_choice.html'
+    success_url = reverse_lazy('polls:index')

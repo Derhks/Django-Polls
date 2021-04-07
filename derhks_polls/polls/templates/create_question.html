@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load crispy_forms_filters %}
+{% load static %}
+
+{% block title %}
+    Create Question
+{% endblock title %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'create_question.css' %}">
+
+    <form method="post">
+        <div class="form-group">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" class="button" value="Create"/>
+        </div>
+    </form>
+{% endblock content %}

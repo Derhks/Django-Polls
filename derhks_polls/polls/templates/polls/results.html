@@ -1,15 +1,18 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/results_style.css' %}">
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/results_style.css' %}">
 
-<div>
-    <h1>{{ question.question_text }}</h1>
+    <div>
+        <h1>{{ question.question_text }}</h1>
 
-    <ul>
-        {% for choice in question.choice_set.all %}
-            <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-        {% endfor %}
-    </ul>
+        <ul>
+            {% for choice in question.choice_set.all %}
+                <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+            {% endfor %}
+        </ul>
 
-    <button role="link" onclick="window.location='{% url 'polls:detail' question.id %}'">Vote again?</button>
-</div>
+        <button role="link" onclick="window.location='{% url 'polls:detail' question.id %}'">Vote again?</button>
+    </div>
+{% endblock content %}
