@@ -92,16 +92,23 @@ Polls application using Django
 
 - Press the "Add Configuration..." icon at the top right.
 
-- Click on the plus icon at the top left.
+- Click on the plus icon at the top left.  
+![My Image](images/Captura%20realizada%20el%202022-08-07%2009.45.11.png)
 
-- In the drop-down select "Django Server". 
+- In the drop-down select "Django Server".   
+![My Image](images/Captura%20realizada%20el%202022-08-07%2009.45.59.png)
 
-- In the upper part in the box "Name:" we write the name that we want to give to the server, for example the name of the project.
+- In the upper part in the box "Name:" we write the name that we want to give 
+to the server, for example the name of the project.
+![My Image](images/Captura%20realizada%20el%202022-08-07%2009.46.39.png)
 
-- In the lower part press the "Apply" and "OK" buttons to save the configuration.
+- In the lower part press the "Apply" and "OK" buttons to save the 
+configuration.
 
-Now you will see that an icon appears with the name you wrote in the "Name:" box, now you can press the "Play" button to run the application server and you can access it from the browser with the URL above.
-
+Now you will see that an icon appears with the name you wrote in the "Name:" 
+box, now you can press the "Play" button to run the application server, and 
+you can access it from the browser with the URL above.  
+![My Image](images/Captura%20realizada%20el%202022-08-07%2010.04.42.png)
 
 ## Docker
 With the help of Docker we can run and test the application with a 
